@@ -7,7 +7,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface CatFactService {
-    @GET("factsasdfasdf")
+    @GET("facts")
     suspend fun getCatFacts(
         @Query("limit") limit: Int = 10
     ): Response<Responses<List<CatFact>>>
