@@ -1,11 +1,10 @@
-package com.froyout.froysource.data.repository
+package com.froyout.froysourceExample.data.repository
 
-import com.froyout.froysource.Resource
-import com.froyout.froysource.base.BaseCall
-import com.froyout.froysource.base.ErrorResponse
-import com.froyout.froysource.data.model.CatErrorResponse
-import com.froyout.froysource.data.model.CatFact
-import com.froyout.froysource.data.network.di.NetworkInjection
+import com.froyout.froysourceExample.Resource
+import com.froyout.froysourceExample.base.BaseCall
+import com.froyout.froysourceExample.data.model.CatErrorResponse
+import com.froyout.froysourceExample.data.model.CatFact
+import com.froyout.froysourceExample.data.network.di.NetworkInjection
 import kotlinx.coroutines.flow.Flow
 
 interface IMainRepository{

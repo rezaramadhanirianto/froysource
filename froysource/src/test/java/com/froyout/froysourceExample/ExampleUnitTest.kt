@@ -1,4 +1,4 @@
-package com.froyout.froysource
+package com.froyout.froysourceExample
 
 import org.junit.Test
 

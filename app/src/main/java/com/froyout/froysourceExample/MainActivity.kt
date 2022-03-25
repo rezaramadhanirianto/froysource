@@ -1,11 +1,11 @@
-package com.froyout.froysource
+package com.froyout.froysourceExample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.froyout.froysource.data.repository.IMainRepository
-import com.froyout.froysource.data.repository.MainRepository
+import com.froyout.froysourceExample.data.repository.IMainRepository
+import com.froyout.froysourceExample.data.repository.MainRepository
 import androidx.lifecycle.lifecycleScope
-import com.froyout.froysource.databinding.ActivityMainBinding
+import com.froyout.froysourceExample.databinding.ActivityMainBinding
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 

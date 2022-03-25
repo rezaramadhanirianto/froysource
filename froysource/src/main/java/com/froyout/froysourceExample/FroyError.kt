@@ -1,6 +1,6 @@
-package com.froyout.froysource
+package com.froyout.froysourceExample
 
-import com.froyout.froysource.base.ErrorResponse
+import com.froyout.froysourceExample.base.ErrorResponse
 
 class FroyError(
     override var code: Int = 0,

@@ -1,6 +1,6 @@
-package com.froyout.froysource.base
+package com.froyout.froysourceExample.base
 
-import com.froyout.froysource.FroyError
+import com.froyout.froysourceExample.FroyError
 import com.google.gson.Gson
 import okhttp3.ResponseBody
 import retrofit2.HttpException

@@ -1,4 +1,4 @@
-package com.froyout.froysource
+package com.froyout.froysourceExample
 
 sealed class Resource<out T>(val data: T? = null, val message: String? = null, val code: Int? = null) {
     class Default: Resource<Nothing>()

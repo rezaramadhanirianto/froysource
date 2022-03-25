@@ -1,6 +1,6 @@
-package com.froyout.froysource.data.network.di
+package com.froyout.froysourceExample.data.network.di
 
-import com.froyout.froysource.data.network.CatFactService
+import com.froyout.froysourceExample.data.network.CatFactService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

@@ -1,6 +1,6 @@
-package com.froyout.froysource.base
+package com.froyout.froysourceExample.base
 
-import com.froyout.froysource.Resource
+import com.froyout.froysourceExample.Resource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

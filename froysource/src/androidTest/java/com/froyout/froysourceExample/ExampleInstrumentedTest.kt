@@ -1,4 +1,4 @@
-package com.froyout.froysource
+package com.froyout.froysourceExample
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

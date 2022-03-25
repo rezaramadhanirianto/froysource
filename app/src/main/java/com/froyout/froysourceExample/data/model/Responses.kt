@@ -1,7 +1,7 @@
-package com.froyout.froysource.data.model
+package com.froyout.froysourceExample.data.model
 
 import com.google.gson.annotations.SerializedName
-import com.froyout.froysource.base.BaseResponse
+import com.froyout.froysourceExample.base.BaseResponse
 
 class Responses<T>: BaseResponse<T>() {
     @SerializedName("data")

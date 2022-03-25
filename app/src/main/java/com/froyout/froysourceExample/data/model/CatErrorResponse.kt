@@ -1,6 +1,6 @@
-package com.froyout.froysource.data.model
+package com.froyout.froysourceExample.data.model
 
-import com.froyout.froysource.base.ErrorResponse
+import com.froyout.froysourceExample.base.ErrorResponse
 import com.google.gson.annotations.SerializedName
 
 class CatErrorResponse: ErrorResponse() {

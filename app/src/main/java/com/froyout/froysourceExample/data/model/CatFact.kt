@@ -1,4 +1,4 @@
-package com.froyout.froysource.data.model
+package com.froyout.froysourceExample.data.model
 
 import com.google.gson.annotations.SerializedName
 

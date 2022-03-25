@@ -1,7 +1,7 @@
-package com.froyout.froysource.data.network
+package com.froyout.froysourceExample.data.network
 
-import com.froyout.froysource.data.model.CatFact
-import com.froyout.froysource.data.model.Responses
+import com.froyout.froysourceExample.data.model.CatFact
+import com.froyout.froysourceExample.data.model.Responses
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
