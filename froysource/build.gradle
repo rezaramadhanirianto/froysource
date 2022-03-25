@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 31
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation deps.core
+    implementation deps.appCompat
+    implementation deps.material
+
+    implementation deps.coroutinesCore
+    implementation deps.retrofitGson
+
+    testImplementation deps.junit
+    androidTestImplementation deps.junitExt
+    androidTestImplementation deps.espresso
+}
+
+afterEvaluate {
+    publishing {
+        publications{
+            release(MavenPublication){
+                from components.release
+
+                groupId = 'com.github.rezaramadhanirianto'
+                artifactId = 'froysource'
+                version = '1.0.0'
+            }
+        }
+    }
+}

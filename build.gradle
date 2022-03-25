@@ -1,0 +1,98 @@
+buildscript {
+    ext.vers = [
+            appCompatVersion: "1.2.0",
+            coreVersion: "1.3.2",
+            constraintLayoutVersion: "2.0.4",
+            junitVersion: "4.13.1",
+            junitExtversion: "1.1.2",
+            espressoVersion: "3.3.0",
+            androidTestVersion: "1.3.0",
+            espressoContribVersion: "3.3.0",
+            androidXTestVersion: "1.2.0",
+            mockitoKotlinVersion: "2.2.0",
+            androidCoreTestVersion: "2.1.0",
+            idleResourceVersion: "3.2.0",
+            mockitoVersion: "3.6.0",
+            retrofit_version: "2.9.0",
+            logging_interceptor_version: "4.8.0",
+            kotlin_coroutines_version: "1.3.9",
+            lifecycle: "2.4.1",
+
+            materialVersion: "1.2.1",
+            recyclerViewVersion: "1.1.0",
+            glideVersion: "4.11.0",
+            cardViewVersion: "1.0.0",
+            sdpVersion: "1.0.6",
+            mockitoCoreVersion: "3.6.0",
+            mockitoInlineVersion: "3.6.0",
+            navigationFragmentVersion: "2.3.4",
+            navigationUiVersion: "2.3.4",
+            koinVersion: "3.1.5",
+            room: "2.4.2",
+            truth: "1.0",
+            turbine: "0.7.0",
+            testCore: "1.3.0",
+    ]
+    ext.deps = [
+            //kotlin
+            core: "androidx.core:core-ktx:${vers.coreVersion}",
+            coroutinesCore: "org.jetbrains.kotlinx:kotlinx-coroutines-core:${vers.kotlin_coroutines_version}",
+
+            //ui
+            appCompat: "androidx.appcompat:appcompat:${vers.appCompatVersion}",
+            constraintLayout: "androidx.constraintlayout:constraintlayout:${vers.constraintLayoutVersion}",
+            recyclerView: "androidx.recyclerview:recyclerview:${vers.recyclerViewVersion}",
+            material: "com.google.android.material:material:${vers.materialVersion}",
+            glide: "com.github.bumptech.glide:glide:${vers.glideVersion}",
+            navFragment: "androidx.navigation:navigation-fragment-ktx:${vers.navigationFragmentVersion}",
+            navUi: "androidx.navigation:navigation-ui-ktx:${vers.navigationUiVersion}",
+            sdp: "com.intuit.sdp:sdp-android:${vers.sdpVersion}",
+
+            // koin
+            koin: "io.insert-koin:koin-core:${vers.koinVersion}",
+            koinAndroid: "io.insert-koin:koin-android:${vers.koinVersion}",
+
+            //network
+            retrofit: "com.squareup.retrofit2:retrofit:${vers.retrofit_version}",
+            retrofitGson: "com.squareup.retrofit2:converter-gson:${vers.retrofit_version}",
+            okhttpLog: "com.squareup.okhttp3:logging-interceptor:${vers.logging_interceptor_version}",
+            // local db
+            roomRuntime:  "androidx.room:room-runtime:${vers.room}",
+            roomCompiler:  "androidx.room:room-compiler:${vers.room}",
+            roomKtx: "androidx.room:room-ktx:${vers.room}",
+
+            // lifecycle
+            lifecycle: "androidx.lifecycle:lifecycle-runtime-ktx:${vers.lifecycle}",
+            lifecycleViewmodel: "androidx.lifecycle:lifecycle-viewmodel-ktx:${vers.lifecycle}",
+
+            //testing
+            espressoIdling: "androidx.test.espresso:espresso-idling-resource:${vers.idleResourceVersion}",
+            junit: "junit:junit:${vers.junitVersion}",
+            espressoCore: "androidx.test.espresso:espresso-core:${vers.espressoVersion}",
+            runner: "androidx.test:runner:${vers.androidTestVersion}",
+            rules: "androidx.test:rules:${vers.androidTestVersion}",
+            junitExt: "androidx.test.ext:junit:${vers.junitExtversion}",
+            espresso: "androidx.test.espresso:espresso-contrib:${vers.espressoContribVersion}",
+            mockitoCore: "org.mockito:mockito-core:${vers.mockitoVersion}",
+            mockitoInline: "org.mockito:mockito-inline:${vers.mockitoVersion}",
+            archCore: "androidx.arch.core:core-testing:${vers.androidCoreTestVersion}",
+            mockitoKotlin: "com.nhaarman.mockitokotlin2:mockito-kotlin:${vers.mockitoKotlinVersion}",
+            coroutineTest: "org.jetbrains.kotlinx:kotlinx-coroutines-test:${vers.kotlin_coroutines_version}",
+            // GOOGLE TRUTH
+            truth: "com.google.truth:truth:${vers.truth}",
+            //TURBINE
+            turbine: "app.cash.turbine:turbine:${vers.turbine}",
+            testCore: "androidx.test:core-ktx:${vers.testCore}",
+    ]
+}
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.1.1' apply false
+    id 'com.android.library' version '7.1.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
