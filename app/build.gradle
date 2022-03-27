@@ -35,7 +35,6 @@ android {
 }
 
 dependencies {
-    implementation project(":froysource")
 
     implementation deps.core
     implementation deps.appCompat
@@ -49,6 +48,8 @@ dependencies {
     implementation deps.coroutinesCore
     implementation deps.retrofit
     implementation deps.retrofitGson
+
+    implementation 'com.github.rezaramadhanirianto:froysource:1.1.2'
 
     testImplementation deps.junit
     androidTestImplementation deps.junitExt
