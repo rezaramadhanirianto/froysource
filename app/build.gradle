@@ -49,8 +49,6 @@ dependencies {
     implementation deps.retrofit
     implementation deps.retrofitGson
 
-    implementation 'com.github.rezaramadhanirianto:froysource:1.1.2'
-
     testImplementation deps.junit
     androidTestImplementation deps.junitExt
     androidTestImplementation deps.espresso
