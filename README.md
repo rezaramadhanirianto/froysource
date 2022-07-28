@@ -1,6 +1,6 @@
 <h1 align="center">Froysource</h1></br>
 <p align="center">
-Easier to manage resource from Network or Local based on Kotlin for Android
+Easier to manage resource from Network or Local for Android
 </p>
 
 
